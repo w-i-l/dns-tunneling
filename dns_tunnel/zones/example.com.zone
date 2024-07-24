@@ -1,0 +1,60 @@
+{
+  "$origin": "example.com",
+  "$ttl": 3600,
+  "soa": {
+    "name": "@",
+    "ttl": 3600,
+    "minimum": 3600,
+    "refresh": 3600,
+    "retry": 1800,
+    "expire": 1209600,
+    "serial": 2024051501,
+    "mname": "ns1.example.com.",
+    "rname": "admin.example.com."
+  },
+  "ns": [
+    {
+      "name": "@",
+      "ttl": 3600,
+      "value": "ns1.example.com."
+    },
+    {
+      "name": "@",
+      "ttl": 3600,
+      "value": "ns2.example.com."
+    }
+  ],
+  "a": [
+    {
+      "name": "@",
+      "ttl": 3600,
+      "value": "123.123.123.123"
+    },
+    {
+      "name": "www",
+      "ttl": 3600,
+      "value": "123.123.123.123"
+    }
+  ],
+  "cname": [
+    {
+      "name": "alias",
+      "ttl": 3600,
+      "value": "www.example.com."
+    }
+  ],
+  "mx": [
+    {
+      "name": "@",
+      "ttl": 3600,
+      "value": "10 mail.example.com."
+    }
+  ],
+  "txt": [
+    {
+      "name": "@",
+      "ttl": 3600,
+      "value": "v=spf1 ip4:123.123.123.123 -all"
+    }
+  ]
+}
